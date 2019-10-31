@@ -33,9 +33,9 @@ namespace AssignmentsWebApp
 
             var connString = Configuration
             .GetConnectionString("DefaultConnection");
-            services.AddDbContext<AppDbContext>(
-            options => options.UseSqlServer(connString));
-            // Add other services.
+            // services.AddDbContext<AppDbContext>(
+            // options => options.UseSqlServer(connString));
+            // Not sure how to resolve this causing an error
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
